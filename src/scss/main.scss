@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600&display=swap');
+
+$color-soft-blue: hsl(215, 51%, 70%);
+$color-cyan: hsl(178, 100%, 50%);
+$color-main-bg: hsl(217, 54%, 11%);
+$color-card-bg: hsl(216, 50%, 16%);
+$color-line: hsl(215, 32%, 27%);
+$color-white: white;
+$ff: Outfit, sans-serif;
+$fs-paragraph: 18px;
+$fw-thin: 100;
+$fw-extra-light: 200;
+$fw-light: 300;
+$fw-normal: 400;
+$fw-bold: 600;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: $ff;
+  color: $color-white;
+}
+
+body {
+  background-color: $color-main-bg;
+}
+
+.card {
+  background-color: $color-card-bg;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: auto;
+  width: clamp(200px, 45%, 300px);
+  margin-top: clamp(25px, 100px, 150px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 20px 3px 3px hsl(217, 55%, 10%);
+
+  
+  .img-div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .card-img {
+      border-radius: 7px;
+      cursor: pointer;
+      width: clamp(150px, 100%, 300px);
+    }
+
+    .hover-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: clamp(150px, 100%, 300px);
+      width: clamp(150px, 100%, 300px);
+      opacity: 0;
+      transition: .2s;
+      border-radius: 7px;
+      background-color: $color-cyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        opacity: .3;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .card-title {
+    margin-top: 1.4rem;
+    font-size: $fs-paragraph;
+    font-weight: $fw-bold;
+    cursor: pointer;
+  }
+
+  .card-title:hover {
+    color: $color-cyan;
+  }
+
+  .card-desc {
+    margin: .8rem 0;
+    font-weight: $fw-light;
+    color: $color-soft-blue
+  }
+
+  .cost-time {
+    margin: .5rem 0;
+    margin-bottom: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-cost {
+    color: $color-cyan;
+    padding-left: .1rem;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-time-left {
+    color: $color-soft-blue;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    margin-right: .2rem;
+  }
+
+  .horizontal-row {
+    height: 1px;
+    background-color: $color-line;
+    margin-bottom: 1rem;
+  }
+
+  .author-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .author-photo {
+    width: clamp(10px, 30px, 50px);
+    margin-right: 1rem;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .author-desc {
+    color: $color-soft-blue;
+    font-weight: $fw-light;
+  }
+
+  .name-style {
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  .name-style:hover {
+    color: $color-cyan;
+  }
+}
+
+.attribuition {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 100px;
+}
