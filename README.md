@@ -29,8 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [not live yet](#)
-- Live Site URL: [not live yet](#)
+- Live Site URL: [Live on Vercel](https://nft-preview-card-frontend-mentor.vercel.app/)
 
 ## My process
 
@@ -67,3 +66,4 @@ As for Sass, finding where I can use mixins to speed up the coding is still a ch
 ## Author
 
 - Frontend Mentor - [mattreee](https://www.frontendmentor.io/profile/mattreee)
+- Codepen - [asdjkl123](https://codepen.io/asdjkl123)
